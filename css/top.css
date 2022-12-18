@@ -9,7 +9,7 @@ body {
 
 /* ======= ヘッダー ======= */
 .header-container {
-    background-color:rgb(117, 117, 117);
+    background-color:#536374;
     width: 100%;
     height: 100px;
     position: sticky;
@@ -50,7 +50,7 @@ body {
 /* ======= コンテンツ > サイドバー ======= */
 .sidebar-container {
     min-width: 300px;
-    box-shadow: 1px 0 5px 1px rgb(185, 185, 185);
+    box-shadow: 1px 0 5px 1px rgb(87, 87, 87);
     box-sizing: border-box;
     color: #111111;
 }
@@ -75,12 +75,21 @@ body {
     font-weight: bold;
 }
 
-.map-title::before{
+.analyze-target-map-wrapper > .map-title::before{
     content: "";
     display: inline-block;
     width: 20px;
     height: 20px;
     background-image:url("../src/icon_analyze_target.png");
+    background-size: contain;
+}
+
+.analyze-model-map-wrapper >.map-title::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image:url("../src/icon_analyze_model.png");
     background-size: contain;
 }
 
@@ -128,9 +137,10 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     border: none;
-    background: rgb(140, 186, 255);
+    background: rgb(102, 135, 184);
     color: #fff;
     font-size: 13px;
+    margin-left: 10px;
 }
 
 .article-list-container{
